@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "./src", // This must be specified if "paths" is.
+    "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -12,8 +13,23 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/ts/*": ["ts/*"],
+      "@/pages/*": ["pages/*"],
+      "@/redux/*": ["redux_file/*"],
+      "@utils/*": ["utils/*"],
+      "@/assets/*": ["assets/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/header/header.jsx",
+    "src/components/logo/index.jsx",
+    "src/components/pages/home/select.jsx"
+  ],
   "exclude": ["node_modules"]
 }
