@@ -1,7 +1,16 @@
 import { Link as A } from 'theme-ui';
 import { Link as MenuLink } from 'react-scroll';
 import NextLink from 'next/link';
-export function NavLink({ path, label, children, ...rest }) {
+export function NavLink({
+  path,
+  label,
+  children,
+  ...rest
+}: {
+  path: string;
+  label: string;
+  children?: JSX.Element | JSX.Element[] | string;
+}) {
   return (
     <MenuLink
       to={path}
@@ -24,7 +33,16 @@ export function NavLink({ path, label, children, ...rest }) {
 //     </NextLink>
 //   );
 // }
-export function Link({ path, label, children, ...rest }) {
+export function Link({
+  path,
+  label,
+  children,
+  ...rest
+}: {
+  path: string;
+  label: string;
+  children?: JSX.Element | JSX.Element[] | string;
+}) {
   return (
     <NextLink href={path}>
       <A {...rest}>{children ? children : label}</A>

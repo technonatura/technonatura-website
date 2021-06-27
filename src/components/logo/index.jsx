@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Link } from 'components/link';
 
-export default function Logo({ white }) {
+export default function Logo() {
   return (
     <Link
       label='d'
