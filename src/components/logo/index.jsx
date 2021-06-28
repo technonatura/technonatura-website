@@ -8,7 +8,9 @@ export default function Logo() {
       path='/'
       sx={{
         variant: 'links.logo',
+        ':hover': { img: { opacity: 0.5, transition: 'ease 300ms' } },
       }}
+      style={{ cursor: 'pointer' }}
     >
       <Image
         src='https://www.technonatura.sch.id/sites/default/files/logo-trans-techno-2.png'

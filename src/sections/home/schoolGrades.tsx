@@ -12,18 +12,21 @@ const data = [
     icon: individual,
     title: 'Madrasah Ibtidaiyah',
     description: `Fokus pada pembentukan karakter terbaik siswa.`,
+    path: '/grade/madrasah-ibtidaiyah',
   },
   {
     id: 2,
     icon: team,
     title: 'Madrasah Tsanawiyah',
     description: `Penekanan pada leadership dan organisasi.`,
+    path: '/grade/madrasah-tsanawiyah',
   },
   {
     id: 3,
     icon: org,
     title: 'Madrasah Aliyah',
     description: `Menyiapkan generasi yang profesional dan world citizen.`,
+    path: '/grade/madrasah-aliyah',
   },
 ];
 

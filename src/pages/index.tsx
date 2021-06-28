@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css';
 import Banner from 'sections/home/header';
 import FeaturedSpace from 'sections/home/featured-space';
 import SchoolGrades from 'sections/home/schoolGrades';
+import SchoolGallery from 'sections/home/gallery';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Banner />
       <SchoolGrades />
       <FeaturedSpace />
+      <SchoolGallery />
     </>
   );
 }

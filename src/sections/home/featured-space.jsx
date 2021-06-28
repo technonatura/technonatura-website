@@ -118,7 +118,7 @@ const FeaturedSpace = () => {
   };
 
   return (
-    <Box id='feature' as='section' sx={styles.section}>
+    <Box id='gallery' as='section' sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.leftContent}>

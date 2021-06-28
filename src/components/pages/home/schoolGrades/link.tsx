@@ -67,7 +67,7 @@ export function LearnMore({
 
 const styles = {
   learnMore: {
-    color: 'link',
+    color: 'primary',
     cursor: 'pointer',
     fontWeight: 500,
     display: 'inline-flex',
