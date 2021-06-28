@@ -55,7 +55,7 @@ const masonryOptions = {
 
 const Gallery = () => {
   return (
-    <Box id='gallery' as='section' sx={styles.section}>
+    <Box  as='section' sx={styles.section}>
       <Container>
         <SectionHeading
           // @ts-ignore

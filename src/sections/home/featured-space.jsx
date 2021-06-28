@@ -124,7 +124,7 @@ const FeaturedSpace = () => {
           <Box sx={styles.leftContent}>
             <SectionHeading
               sx={styles.heading}
-              title='Some good place to where can build your startup business'
+              title='Sekolah dengan tempat dan fasilitas bagus untuk belajar.'
               description='Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities.'
             />
             {/* <Box sx={styles.featureWrapper}>
