@@ -29,7 +29,7 @@ const env = {
 // next.js configuration
 const nextConfig = {
   images: {
-    domains: ['www.technonatura.sch.id'],
+    domains: ['www.technonatura.sch.id', 'i3.ytimg.com'],
   },
   pageExtensions: [
     'page.js',

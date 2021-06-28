@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Link } from 'components/link';
+import { Link } from '@/components/links/link';
 
 export default function Logo() {
   return (

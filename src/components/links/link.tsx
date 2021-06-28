@@ -58,7 +58,7 @@ export function LearnMore({
 }) {
   return (
     <NextLink href={path}>
-      <A sx={styles.learnMore} {...rest}>
+      <A as='a' sx={styles.learnMore} {...rest}>
         {label ?? 'Learn More'} <HiOutlineChevronRight />
       </A>
     </NextLink>

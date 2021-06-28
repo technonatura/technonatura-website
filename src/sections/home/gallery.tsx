@@ -1,6 +1,10 @@
-import { jsx, Box, Container, Image, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import Masonry from 'react-masonry-component';
+
+import { Box, Container, Button } from 'theme-ui';
+
+import NextLink from 'next/link';
+
 import SectionHeading from 'components/pages/home/featured-space/section-heading';
 import GalleryCard from 'components/pages/home/cards/gallery-card';
 
@@ -56,8 +60,8 @@ const Gallery = () => {
         <SectionHeading
           // @ts-ignore
           sx={styles.heading}
-          slogan='Working space'
-          title='Let’s meet our interior room decoration'
+          slogan='Madrasah technoNatura Galeries'
+          title='Jelajahi Madrasah International TechnoNatura Galeries'
         />
         <Box
           as={Masonry}
@@ -73,9 +77,11 @@ const Gallery = () => {
             />
           ))}
         </Box>
-        <Button variant='muted' sx={styles.button}>
-          Explore More <RiArrowRightSLine size='20px' />
-        </Button>
+        <NextLink href='/galeries'>
+          <Button variant='muted' sx={styles.button}>
+            Explore More <RiArrowRightSLine size='20px' />
+          </Button>
+        </NextLink>
       </Container>
     </Box>
   );

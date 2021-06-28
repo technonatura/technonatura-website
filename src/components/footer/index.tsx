@@ -6,7 +6,7 @@ import {
   Container,
   ThemeUIStyleObject,
 } from 'theme-ui';
-import { Link } from 'components/link';
+import { Link } from '@/components/links/link';
 import Logo from 'components/logo';
 import { rgba } from 'polished';
 import menuItems from './footer.data';

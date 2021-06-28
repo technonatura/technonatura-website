@@ -1,5 +1,5 @@
 import { jsx, Box, Image, Heading, Text } from 'theme-ui';
-import { LearnMore } from './link';
+import { LearnMore } from '../../../links/link';
 import NextjsImage from 'next/image';
 
 const Feature = ({

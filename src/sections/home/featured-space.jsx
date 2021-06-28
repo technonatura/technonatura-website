@@ -127,11 +127,11 @@ const FeaturedSpace = () => {
               title='Some good place to where can build your startup business'
               description='Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities.'
             />
-            <Box sx={styles.featureWrapper}>
+            {/* <Box sx={styles.featureWrapper}>
               {data?.feature?.map((feature) => (
                 <Feature key={feature.id} data={feature} />
               ))}
-            </Box>
+            </Box> */}
           </Box>
           <Box sx={styles.rightContent}>
             <Progressbar
