@@ -6,6 +6,8 @@ import SchoolGrades from 'sections/home/schoolGrades';
 import SchoolGallery from 'sections/home/gallery';
 import SchoolOverview from 'sections/home/overview';
 import SchoolAchievements from 'sections/home/Achievements';
+import PeopleThoughts from 'sections/home/PeopleThoughts';
+import Teachers from 'sections/home/teachers';
 
 export default function Home() {
   return (
@@ -44,7 +46,10 @@ export default function Home() {
         <SchoolGallery />
         <SchoolOverview />
       </section>
-      <SchoolAchievements/>
+      <PeopleThoughts />
+
+      <SchoolAchievements />
+      <Teachers />
     </>
   );
 }

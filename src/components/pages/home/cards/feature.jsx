@@ -1,7 +1,6 @@
 import { rgba } from 'polished';
 import Image from 'components/pages/home/featured-space/image';
 import { jsx, Box, Heading, Text } from 'theme-ui';
-
 const Feature = ({ data: feature }) => {
   return (
     <Box key={feature.id} sx={styles.featureItem}>

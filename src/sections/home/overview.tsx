@@ -81,7 +81,7 @@ export default IntroVideo;
 const styles: ThemeUIStyleObject = {
   heading: {
     width: '100%',
-    padding: ['0px 100px', '0px 100px', '0px 200px'],
+    padding: ['0px 0px', '0px 20px', '0px 20px', '0px 80px', '0px 200px'],
     textAlign: ['center'],
     mb: [5],
     h2: {
@@ -90,14 +90,25 @@ const styles: ThemeUIStyleObject = {
   },
   explore: {
     textAlign: ['center'],
-    mb: [6],
+    mb: '100px',
   },
   videoWrapper: {
+    margin: ['20px 0px', '20px 0px', '20px 0px', '20px 0px', '10px auto'],
     textAlign: 'center',
     position: 'relative',
+    height: ['100%', '100%', '100%', '100%', '600px'],
+    width: ['100%', '100%', '100%', '100%', '100%'],
+
+    overflow: 'hidden',
     '.video-banner': {
-      maxWidth: ['100%', '100%', '100%', '100%', '100%', '80%', '100%'],
+      width: '100%',
+      height: '100%',
+
       filter: 'brightness(0.7)',
+      transition: '300ms',
+      ':hover': {
+        transform: 'scale(1.1)',
+      },
     },
   },
   playPause: {

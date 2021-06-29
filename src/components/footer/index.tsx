@@ -5,13 +5,21 @@ import {
   Text,
   Container,
   ThemeUIStyleObject,
+  Image,
 } from 'theme-ui';
+
+import Select, { components } from 'react-select';
+
 import { Link } from '@/components/links/link';
 import Logo from 'components/logo';
-import { rgba } from 'polished';
+
 import menuItems from './footer.data';
 
 import CallToAction from 'components/CTAs/contactCTA';
+
+import UK_FLAG from 'assets/images/icons/UK-Flag.svg';
+import ID_FLAG from 'assets/images/icons/ID-Flag.svg';
+
 const navItems = [
   {
     id: 1,
@@ -40,6 +48,10 @@ const navItems = [
   },
 ];
 
+const Placeholder = (props: any) => {
+  return <components.Placeholder id='hey' {...props} />;
+};
+
 export default function Footer() {
   return (
     <>
@@ -61,6 +73,46 @@ export default function Footer() {
               <Box className='footer__logo'>
                 <Logo />
               </Box>
+              <Select
+                className='select-language'
+                isSearchable={false}
+                closeMenuOnSelect={false}
+                components={{ Placeholder }}
+                placeholder={'Language'}
+                styles={{
+                  placeholder: (base) => ({
+                    ...base,
+                    fontSize: '1em',
+                    fontWeight: 400,
+                  }),
+                }}
+                defaultValue={{
+                  label: (
+                    <Box>
+                      <Image src={ID_FLAG}></Image> Bahasa
+                    </Box>
+                  ),
+                  value: 'bahasa',
+                }}
+                options={[
+                  {
+                    label: (
+                      <Box>
+                        <Image src={ID_FLAG}></Image> Bahasa
+                      </Box>
+                    ),
+                    value: 'bahasa',
+                  },
+                  {
+                    label: (
+                      <Box>
+                        <Image src={UK_FLAG}></Image> EN-GB
+                      </Box>
+                    ),
+                    value: 'en-gb',
+                  },
+                ]}
+              />
               <nav className='footer__menu'>
                 <Link path='/' label='Terms of use' />
                 <Link path='/' label='Privacy' />
@@ -166,7 +218,7 @@ const styles = {
       textDecoration: 'none',
       lineHeight: [1.5, null, 1.9],
       svg: {
-        width: '17px',
+        width: '18px',
         mr: 2,
         fontSize: 2,
         flexShrink: 0,
@@ -180,7 +232,7 @@ const styles = {
       '&.github > svg': {
         color: '#161614',
       },
-      '&.dribbble > svg': {
+      '&.instagram > svg': {
         color: '#E74D89',
       },
       ':hover': {
@@ -229,6 +281,19 @@ const styles = {
         ':hover': {
           color: 'primary',
         },
+      },
+    },
+    '.select-language': {
+      width: [
+        '100% !important',
+        '100% !important',
+        '100% !important',
+        '100% !important',
+        '80% !important',
+      ],
+      img: {
+        position: 'relative',
+        top: '5px',
       },
     },
     copyright: {

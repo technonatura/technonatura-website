@@ -1,4 +1,5 @@
-import { FaFacebook, FaTwitter, FaGithub, FaDribbble } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { AiFillGithub } from 'react-icons/ai';
 import { IconType } from 'react-icons';
 
 const FooterData: Array<{
@@ -74,127 +75,34 @@ const FooterData: Array<{
     ],
   },
   {
-    header: 'Contact',
+    header: "Let's Connect",
     items: [
       {
-        path: '/',
+        path: 'https://www.facebook.com/technonatura/',
         label: 'Facebook',
         name: 'facebook',
         icon: <FaFacebook />,
       },
       {
-        path: '/',
+        path: 'https://twitter.com/technonatura/',
         label: 'Twitter',
         name: 'twitter',
         icon: <FaTwitter />,
       },
       {
-        path: '/',
+        path: 'https://github.com/technonatura-org',
         label: 'Github',
         name: 'github',
-        icon: <FaGithub />,
+        icon: <AiFillGithub />,
       },
       {
-        path: '/',
-        label: 'Dribbble',
-        name: 'dribbble',
-        icon: <FaDribbble />,
+        path: 'https://instagram.com/technonatura',
+        label: 'Instagram',
+        name: 'instagram',
+        icon: <FaInstagram />,
       },
     ],
   },
 ];
 
-export default [
-  {
-    header: 'About Us',
-    items: [
-      {
-        path: '/',
-        label: 'Support Center',
-      },
-      {
-        path: '/',
-        label: 'Customer Support',
-      },
-      {
-        path: '/',
-        label: 'About Us',
-      },
-      {
-        path: '/',
-        label: 'Copyright',
-      },
-    ],
-  },
-  {
-    header: 'Our Information',
-    items: [
-      {
-        path: '/',
-        label: 'Return Policy ',
-      },
-      {
-        path: '/',
-        label: 'Privacy Policy',
-      },
-      {
-        path: '/',
-        label: 'Terms & Conditions',
-      },
-      {
-        path: '/',
-        label: 'Site Map',
-      },
-    ],
-  },
-  {
-    header: 'My Account',
-    items: [
-      {
-        path: '/',
-        label: 'Press inquiries',
-      },
-      {
-        path: '/',
-        label: 'Social media ',
-      },
-      {
-        path: '/',
-        label: 'directories',
-      },
-      {
-        path: '/',
-        label: 'Images & B-roll',
-      },
-    ],
-  },
-  {
-    header: 'Contact',
-    items: [
-      {
-        path: '/',
-        label: 'Facebook',
-        name: 'facebook',
-        icon: <FaFacebook />,
-      },
-      {
-        path: '/',
-        label: 'Twitter',
-        name: 'twitter',
-        icon: <FaTwitter />,
-      },
-      {
-        path: '/',
-        label: 'Github',
-        name: 'github',
-        icon: <FaGithub />,
-      },
-      {
-        path: '/',
-        label: 'Dribbble',
-        name: 'dribbble',
-        icon: <FaDribbble />,
-      },
-    ],
-  },
-];
+export default FooterData;

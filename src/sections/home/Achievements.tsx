@@ -8,19 +8,17 @@ const ROAD_MAP_DATA = {
   },
   posts: [
     {
-      date: '29 January 2019',
-      title: 'Join new server hosting',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor labore dolore',
+      date: '2009',
+      title: 'Juara I Lomba Robot Maze INAICTA 2009',
     },
     {
-      date: '17 April 2019',
-      title: 'Mining coin with latest gpu',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor labore dolore',
+      date: '2010',
+      title: 'Finalis INAICTA 2010 kategori Proyek SMK/SMA',
     },
     {
-      date: '31 October 2019',
-      title: 'Turn new website with design',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor labore dolore',
+      date: '2017',
+      title:
+        'Medali Perak FGC 2017, Washington DC, USA kategori Innovation in Engineering',
     },
   ],
 };
@@ -91,7 +89,6 @@ export default RoadMap;
 
 const styles = {
   section: {
-    mb: ['63px', '75px', null, '90px', '110px', null, '140px'],
     position: 'relative',
     backgroundColor: '#F9FBFD',
     padding: '80px 0px',

@@ -13,7 +13,7 @@ const withPlugins = require('next-compose-plugins');
 const NODE_ENV = process.env.NODE_ENV;
 const dualENV = {
   production: {
-    PUBLIC_URL: 'https://dashboard.mts-technonatura.vercel.app',
+    PUBLIC_URL: 'https://www.technonatura.vercel.app',
   },
   development: {
     PUBLIC_URL: 'http://localhost:3000',
@@ -29,7 +29,7 @@ const env = {
 // next.js configuration
 const nextConfig = {
   images: {
-    domains: ['www.technonatura.sch.id', 'i3.ytimg.com'],
+    domains: ['www.technonatura.sch.id', 'i3.ytimg.com', 'images.unsplash.com'],
   },
   pageExtensions: [
     'page.js',

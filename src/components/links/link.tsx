@@ -39,6 +39,14 @@ export function Link({
   label?: string;
   children?: JSX.Element | JSX.Element[];
 }) {
+  if (path.startsWith('https')) {
+    return (
+      <A as='a' href={path} sx={styles.learnMore} {...rest}>
+        <A {...rest}>{children ? children : label}</A>
+      </A>
+    );
+  }
+
   return (
     <NextLink href={path}>
       <A {...rest}>{children ? children : label}</A>

@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+::selection {
+  background: #77e469b0;
+}
