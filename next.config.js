@@ -28,6 +28,11 @@ const env = {
 
 // next.js configuration
 const nextConfig = {
+  i18n: {
+    locales: ['en-GB', 'id'],
+    defaultLocale: 'id',
+    localeDetection: true,
+  },
   images: {
     domains: ['www.technonatura.sch.id', 'i3.ytimg.com', 'images.unsplash.com'],
   },

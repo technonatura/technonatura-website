@@ -18,9 +18,10 @@
       "@/components/*": ["components/*"],
       "@/ts/*": ["ts/*"],
       "@/pages/*": ["pages/*"],
-      "@/redux/*": ["redux_file/*"],
+      "@/redux/*": ["redux/*"],
       "@utils/*": ["utils/*"],
-      "@/assets/*": ["assets/*"]
+      "@/assets/*": ["assets/*"],
+      "@/locale/*": ["locales/*"]
     }
   },
   "include": [

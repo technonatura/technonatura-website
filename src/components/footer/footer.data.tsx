@@ -15,20 +15,25 @@ const FooterData: Array<{
     header: 'About Us',
     items: [
       {
-        path: '/',
-        label: 'Support Center',
+        path: '/page/yayasan-CREATE',
+        label: 'Yayasan CREATE',
       },
       {
-        path: '/',
-        label: 'Customer Support',
+        path: '/page/yayasan-CREATE',
+        label: 'Visi dan Misi',
       },
       {
-        path: '/',
+        path: '/page/yayasan-CREATE',
+        label: 'Kurikulum',
+      },
+      {
+        path: '/about',
         label: 'About Us',
       },
+
       {
-        path: '/',
-        label: 'Copyright',
+        path: '/teachers',
+        label: 'Teachers',
       },
     ],
   },
@@ -36,20 +41,20 @@ const FooterData: Array<{
     header: 'Our Information',
     items: [
       {
-        path: '/',
-        label: 'Return Policy ',
+        path: '/blog',
+        label: 'Blog',
       },
       {
-        path: '/',
-        label: 'Privacy Policy',
-      },
-      {
-        path: '/',
-        label: 'Terms & Conditions',
+        path: '/news',
+        label: 'News',
       },
       {
         path: '/',
         label: 'Site Map',
+      },
+      {
+        path: '/help',
+        label: 'Support Center',
       },
     ],
   },

@@ -1,24 +1,16 @@
-import {
-  Heading,
-  Box,
-  Flex,
-  Text,
-  Container,
-  ThemeUIStyleObject,
-  Image,
-} from 'theme-ui';
+import { useRouter } from 'next/router';
+import { Heading, Box, Flex, Text, Container, Image } from 'theme-ui';
 
 import Select, { components } from 'react-select';
 
-import { Link } from '@/components/links/link';
-import Logo from 'components/logo';
-
 import menuItems from './footer.data';
 
+import { Link } from '@/components/links/link';
+
+import Logo from 'components/logo';
 import CallToAction from 'components/CTAs/contactCTA';
 
-import UK_FLAG from 'assets/images/icons/UK-Flag.svg';
-import ID_FLAG from 'assets/images/icons/ID-Flag.svg';
+import { locales } from 'locales/index';
 
 const navItems = [
   {
@@ -73,49 +65,10 @@ export default function Footer() {
               <Box className='footer__logo'>
                 <Logo />
               </Box>
-              <Select
-                className='select-language'
-                isSearchable={false}
-                closeMenuOnSelect={false}
-                components={{ Placeholder }}
-                placeholder={'Language'}
-                styles={{
-                  placeholder: (base) => ({
-                    ...base,
-                    fontSize: '1em',
-                    fontWeight: 400,
-                  }),
-                }}
-                defaultValue={{
-                  label: (
-                    <Box>
-                      <Image src={ID_FLAG}></Image> Bahasa
-                    </Box>
-                  ),
-                  value: 'bahasa',
-                }}
-                options={[
-                  {
-                    label: (
-                      <Box>
-                        <Image src={ID_FLAG}></Image> Bahasa
-                      </Box>
-                    ),
-                    value: 'bahasa',
-                  },
-                  {
-                    label: (
-                      <Box>
-                        <Image src={UK_FLAG}></Image> EN-GB
-                      </Box>
-                    ),
-                    value: 'en-gb',
-                  },
-                ]}
-              />
+              <SwitchLocale />
               <nav className='footer__menu'>
-                <Link path='/' label='Terms of use' />
-                <Link path='/' label='Privacy' />
+                <Link path='/' label='Account' />
+                <Link path='/' label='Dashboard' />
               </nav>
               <Text as='p' sx={styles.copyrightArea.copyright}>
                 © 2021 All right reserved - Design & Developed by lvl 7 students
@@ -159,6 +112,42 @@ export default function Footer() {
         </Container>
       </footer>
     </>
+  );
+}
+
+function SwitchLocale() {
+  const router = useRouter();
+  console.log(
+    router.defaultLocale,
+    router.locale,
+    router.locales,
+    router.domainLocales,
+    router,
+  );
+  return (
+    <Select
+      className='select-language'
+      isSearchable={false}
+      closeMenuOnSelect={false}
+      components={{ Placeholder }}
+      placeholder={'Language'}
+      onChange={(e) => {
+        router.push(router.asPath, router.asPath, { locale: e?.value });
+      }}
+      styles={{
+        placeholder: (base) => ({
+          ...base,
+          fontSize: '1em',
+          fontWeight: 400,
+        }),
+      }}
+      defaultValue={
+        locales.find((locale) => locale.value == router.locale)
+          ? locales.find((locale) => locale.value == router.locale)
+          : locales.find((locale) => locale.value == 'id')
+      }
+      options={locales}
+    />
   );
 }
 

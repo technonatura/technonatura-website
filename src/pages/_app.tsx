@@ -11,6 +11,7 @@ import 'swiper/swiper-bundle.min.css';
 import '../styles/slick.min.css';
 import analytics, { init } from 'analytics';
 import 'typeface-dm-sans';
+import ProgressLoad from 'components/ProgressLoad';
 
 function MyApp({ Component, pageProps }: AppProps) {
   // useEffect(() => {
@@ -23,6 +24,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     // @ts-ignore
     <ThemeProvider theme={theme}>
+      <ProgressLoad />
+
       <Layout>
         <Component {...pageProps} />
       </Layout>

@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 
 import Banner from 'sections/home/header';
@@ -8,8 +9,11 @@ import SchoolOverview from 'sections/home/overview';
 import SchoolAchievements from 'sections/home/Achievements';
 import PeopleThoughts from 'sections/home/PeopleThoughts';
 import Teachers from 'sections/home/teachers';
+import OurValues from 'sections/home/our-values';
+import LatestBlogPost from 'sections/home/Blog-Post-List';
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
       <NextSeo
@@ -50,6 +54,8 @@ export default function Home() {
 
       <SchoolAchievements />
       <Teachers />
+      <OurValues />
+      <LatestBlogPost />
     </>
   );
 }
