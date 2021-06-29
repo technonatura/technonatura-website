@@ -54,6 +54,7 @@ const RoadMap = () => {
           // @ts-ignore
           sx={styles.flex}
         >
+          {/* @ts-ignore */}
           {posts.map(({ date, title, text }, index) => (
             <Box
               // @ts-ignore
